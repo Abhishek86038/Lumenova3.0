@@ -153,3 +153,7 @@ Documented the necessary configuration steps for setting up and toggling the Tes
 Added details explaining how transaction simulations are executed by the Stellar SDK before sending to the ledger.
 
 
+## docs: add tips on resolving Stellar ledger synchronization delays
+Added helpful troubleshooting tips for managing slow ledger closures or RPC synchronization latency in the frontend.
+
+
