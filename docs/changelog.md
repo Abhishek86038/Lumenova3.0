@@ -81,3 +81,7 @@ Expanded assert descriptions in crowdfunding/src/test.rs.
 Added details in deploy.sh explaining how to fund the deployer account using Friendbot.
 
 
+## docs: document testnet Native XLM contract ID verification
+Added documentation verification steps for native XLM token address on Testnet.
+
+
