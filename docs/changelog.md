@@ -125,3 +125,7 @@ Documented front-end numeric inputs check and validation constraints.
 Added style documentation details on layout scroll container class overrides.
 
 
+## docs: add docstring to ErrorBoundary component properties
+Documented ErrorBoundary state reset parameters.
+
+
