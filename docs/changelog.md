@@ -41,3 +41,7 @@ Documented the donate function parameters, return values, and cross-contract cal
 Documented the withdraw function logic and target account routing for campaign owners.
 
 
+## docs: document get_total_raised getter function
+Documented the get_total_raised read-only function logic.
+
+
