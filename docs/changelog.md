@@ -37,3 +37,7 @@ Added detailed comments on contract panic cases such as goal limits or unauthori
 Documented the donate function parameters, return values, and cross-contract call triggering logic.
 
 
+## docs: document withdraw function logic in crowdfunding
+Documented the withdraw function logic and target account routing for campaign owners.
+
+
