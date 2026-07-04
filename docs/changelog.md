@@ -117,3 +117,7 @@ Added documentation for Tailwind utility classes used in the badge tier display.
 Documented percentage arithmetic in CampaignProgress component.
 
 
+## docs: document DonateForm inputs validation logic
+Documented front-end numeric inputs check and validation constraints.
+
+
