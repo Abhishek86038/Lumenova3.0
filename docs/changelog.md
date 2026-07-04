@@ -157,3 +157,7 @@ Added details explaining how transaction simulations are executed by the Stellar
 Added helpful troubleshooting tips for managing slow ledger closures or RPC synchronization latency in the frontend.
 
 
+## docs: specify memory allocation profiles in Cargo.toml optimization parameters
+Added explanations regarding Rust memory profile adjustments and opt-levels for WASM contract optimization.
+
+
