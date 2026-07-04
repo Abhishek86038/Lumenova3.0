@@ -137,3 +137,7 @@ Documented connecting callbacks in WalletModal component.
 Added documentation details explaining how both contract events are monitored simultaneously.
 
 
+## docs: add comments explaining ledger sequence lookup logic in App.jsx
+Documented ledger sequence backtracking logic in App.jsx.
+
+
