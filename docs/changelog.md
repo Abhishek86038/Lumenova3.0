@@ -25,3 +25,7 @@ Documented the badge contract ID mapping in the crowdfunding contract storage.
 Cleaned up unused imports and organized crate imports in crowdfunding/src/lib.rs.
 
 
+## refactor: simplify require_auth checks in crowdfunding contract
+Aligned authorization checks with standard Stellar patterns in the Rust contracts.
+
+
