@@ -49,3 +49,7 @@ Documented the get_total_raised read-only function logic.
 Documented the get_goal read-only function logic.
 
 
+## docs: add comments on rewards_badge admin authorization
+Added comments in the rewards badge contract explaining admin minting privilege rules.
+
+
