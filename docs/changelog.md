@@ -133,3 +133,7 @@ Documented ErrorBoundary state reset parameters.
 Documented connecting callbacks in WalletModal component.
 
 
+## docs: explain dual event filtering pattern in App.jsx
+Added documentation details explaining how both contract events are monitored simultaneously.
+
+
