@@ -105,3 +105,7 @@ Documented status polling logic in services/contract.js.
 Formatted contract service JavaScript code for better readability.
 
 
+## docs: add docstring to BadgeIndicator component properties
+Documented props for BadgeIndicator component.
+
+
