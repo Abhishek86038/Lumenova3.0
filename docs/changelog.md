@@ -161,3 +161,7 @@ Added helpful troubleshooting tips for managing slow ledger closures or RPC sync
 Added explanations regarding Rust memory profile adjustments and opt-levels for WASM contract optimization.
 
 
+## docs: update troubleshooting tips for failed Friendbot funding requests
+Documented steps on how to manually fetch Friendbot XLM if the primary faucet returns a rate limit error.
+
+
