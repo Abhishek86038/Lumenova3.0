@@ -93,3 +93,7 @@ Documented state serialization and parsing in services/contract.js.
 Documented badge client call parameter formatting in services/contract.js.
 
 
+## docs: add comments on submitDonation helper in services/contract.js
+Added detailed documentation for the transaction submission pipeline in contract.js.
+
+
