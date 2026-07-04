@@ -113,3 +113,7 @@ Documented props for BadgeIndicator component.
 Added documentation for Tailwind utility classes used in the badge tier display.
 
 
+## docs: add comments explaining CampaignProgress progress bar calculation
+Documented percentage arithmetic in CampaignProgress component.
+
+
