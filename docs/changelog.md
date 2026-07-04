@@ -77,3 +77,7 @@ Refactored test asserts in rewards_badge/src/test.rs for cleaner error reporting
 Expanded assert descriptions in crowdfunding/src/test.rs.
 
 
+## docs: update deploy.sh comments to explain friendbot pre-funding
+Added details in deploy.sh explaining how to fund the deployer account using Friendbot.
+
+
