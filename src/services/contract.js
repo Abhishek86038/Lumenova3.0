@@ -5,14 +5,11 @@ const rpcUrl = 'https://soroban-testnet.stellar.org';
 export const server = new rpc.Server(rpcUrl);
 export const networkPassphrase = Networks.TESTNET;
 
-// Replace this with the actual deployed contract ID later
-export const CONTRACT_ID = 'CAKVP6WJITLBTZOCGL4JEEKYWPYDT7EXREE6EM27WJV6Y7WTWNVCCYXS'; 
+// Newly deployed Testnet contract IDs
+export const CONTRACT_ID = 'CDLU7V7V2WFQB7EXJMY6S76IRJHGV3QGTMAC3UGU46UNRBWQIDDIOWMY'; 
+export const BADGE_CONTRACT_ID = 'CDBRYLG3XQN744X7MUB6T4V5KUIBTPCJCEWCKD6CBLL6UOOVWADHIFUL';
 
 export async function fetchContractState() {
-  if (CONTRACT_ID === 'TO_BE_REPLACED') {
-      return { goal: 0, raised: 0 };
-  }
-  
   try {
     const goalRes = await server.simulateTransaction(
       new TransactionBuilder(
@@ -56,6 +53,10 @@ export async function fetchContractState() {
         .build()
     );
 
+    if (goalRes.error || raisedRes.error) {
+      throw new Error(`Simulation failed: ${goalRes.error || raisedRes.error}`);
+    }
+
     const goal = goalRes.result?.retval ? scValToNative(goalRes.result.retval) : 0;
     const raised = raisedRes.result?.retval ? scValToNative(raisedRes.result.retval) : 0;
     
@@ -65,7 +66,45 @@ export async function fetchContractState() {
     };
   } catch (error) {
     console.error("Error fetching contract state:", error);
-    return { goal: 0, raised: 0 };
+    throw error; // Rethrow to let the UI catch it and show a Retry button
+  }
+}
+
+export async function fetchUserBadge(pubKey) {
+  if (!pubKey) return 0;
+  try {
+    const res = await server.simulateTransaction(
+      new TransactionBuilder(
+        await server.getAccount('GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF'),
+        { fee: '100', networkPassphrase }
+      )
+        .addOperation(
+          Operation.invokeHostFunction({
+            func: xdr.HostFunction.hostFunctionTypeInvokeContract(
+              new xdr.InvokeContractArgs({
+                contractAddress: Address.fromString(BADGE_CONTRACT_ID).toScAddress(),
+                functionName: 'get_badge',
+                args: [
+                  nativeToScVal(pubKey, { type: 'address' })
+                ],
+              })
+            ),
+            auth: [],
+          })
+        )
+        .setTimeout(30)
+        .build()
+    );
+
+    if (res.error) {
+      throw new Error(`Badge simulation failed: ${res.error}`);
+    }
+
+    const badge = res.result?.retval ? scValToNative(res.result.retval) : 0;
+    return Number(badge);
+  } catch (error) {
+    console.error("Error fetching user badge:", error);
+    throw error;
   }
 }
 
@@ -112,11 +151,14 @@ export async function submitDonation(pubKey, amount) {
 }
 
 export async function checkTransactionStatus(txHash) {
-  while (true) {
+  let attempts = 0;
+  while (attempts < 15) {
     const status = await server.getTransaction(txHash);
     if (status.status !== rpc.Api.GetTransactionStatus.NOT_FOUND) {
       return status;
     }
     await new Promise(resolve => setTimeout(resolve, 2000));
+    attempts++;
   }
+  throw new Error("Transaction verification timed out");
 }
