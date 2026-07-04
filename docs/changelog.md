@@ -13,3 +13,7 @@ Documented the campaign goal storage key mapping in the Rust contract storage la
 Documented the raised amount storage key mapping in the Rust contract storage layout.
 
 
+## docs: add explanation for token storage key
+Added documentation for the token storage key that represents the SAC native XLM address.
+
+
