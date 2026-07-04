@@ -53,3 +53,7 @@ Documented the get_goal read-only function logic.
 Added comments in the rewards badge contract explaining admin minting privilege rules.
 
 
+## docs: document mint_badge function inputs and constraints
+Documented badge tiers and minting validation checks in rewards_badge/src/lib.rs.
+
+
