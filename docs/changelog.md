@@ -149,3 +149,7 @@ Completed development changelog detailing all 50 commits.
 Documented the necessary configuration steps for setting up and toggling the Testnet network inside the Freighter wallet extension.
 
 
+## docs: document contract interaction simulation workflows
+Added details explaining how transaction simulations are executed by the Stellar SDK before sending to the ledger.
+
+
