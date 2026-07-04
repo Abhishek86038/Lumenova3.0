@@ -69,3 +69,7 @@ Added clear visual divider comments separating storage keys, logic, and tests in
 Added visual section divider comments in crowdfunding/src/lib.rs.
 
 
+## refactor: simplify test assertions in rewards_badge test suite
+Refactored test asserts in rewards_badge/src/test.rs for cleaner error reporting.
+
+
