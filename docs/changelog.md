@@ -57,3 +57,7 @@ Added comments in the rewards badge contract explaining admin minting privilege 
 Documented badge tiers and minting validation checks in rewards_badge/src/lib.rs.
 
 
+## docs: document get_badge getter function logic
+Documented the get_badge getter function used by the frontend to display sponsor levels.
+
+
