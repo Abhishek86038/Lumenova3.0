@@ -97,3 +97,7 @@ Documented badge client call parameter formatting in services/contract.js.
 Added detailed documentation for the transaction submission pipeline in contract.js.
 
 
+## docs: document checkTransactionStatus helper in services/contract.js
+Documented status polling logic in services/contract.js.
+
+
