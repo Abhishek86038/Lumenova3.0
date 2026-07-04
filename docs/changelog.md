@@ -33,3 +33,7 @@ Aligned authorization checks with standard Stellar patterns in the Rust contract
 Added detailed comments on contract panic cases such as goal limits or unauthorized access.
 
 
+## docs: add docstring for donate function in crowdfunding
+Documented the donate function parameters, return values, and cross-contract call triggering logic.
+
+
