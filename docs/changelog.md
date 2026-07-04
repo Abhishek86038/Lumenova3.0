@@ -141,3 +141,7 @@ Added documentation details explaining how both contract events are monitored si
 Documented ledger sequence backtracking logic in App.jsx.
 
 
+## docs: finalize changelog file documenting all project milestones
+Completed development changelog detailing all 50 commits.
+
+
