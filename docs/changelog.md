@@ -9,3 +9,7 @@ Added detailed documentation for the crowdfunding contract initialization parame
 Documented the campaign goal storage key mapping in the Rust contract storage layout.
 
 
+## docs: add inline comments explaining raised storage key
+Documented the raised amount storage key mapping in the Rust contract storage layout.
+
+
