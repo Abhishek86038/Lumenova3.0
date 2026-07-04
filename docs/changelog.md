@@ -65,3 +65,7 @@ Documented the get_badge getter function used by the frontend to display sponsor
 Added clear visual divider comments separating storage keys, logic, and tests in rewards_badge.
 
 
+## style: add section dividers in crowdfunding src/lib.rs
+Added visual section divider comments in crowdfunding/src/lib.rs.
+
+
