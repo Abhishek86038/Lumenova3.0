@@ -61,3 +61,7 @@ Documented badge tiers and minting validation checks in rewards_badge/src/lib.rs
 Documented the get_badge getter function used by the frontend to display sponsor levels.
 
 
+## style: add section dividers in rewards_badge src/lib.rs
+Added clear visual divider comments separating storage keys, logic, and tests in rewards_badge.
+
+
