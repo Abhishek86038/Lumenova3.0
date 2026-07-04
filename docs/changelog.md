@@ -45,3 +45,7 @@ Documented the withdraw function logic and target account routing for campaign o
 Documented the get_total_raised read-only function logic.
 
 
+## docs: document get_goal getter function
+Documented the get_goal read-only function logic.
+
+
