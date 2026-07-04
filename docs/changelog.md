@@ -121,3 +121,7 @@ Documented percentage arithmetic in CampaignProgress component.
 Documented front-end numeric inputs check and validation constraints.
 
 
+## style: explain DonationFeed scrollbar styling overrides
+Added style documentation details on layout scroll container class overrides.
+
+
