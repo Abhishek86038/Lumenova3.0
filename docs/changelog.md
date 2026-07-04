@@ -109,3 +109,7 @@ Formatted contract service JavaScript code for better readability.
 Documented props for BadgeIndicator component.
 
 
+## docs: explain badge tiers visualization styling classes
+Added documentation for Tailwind utility classes used in the badge tier display.
+
+
