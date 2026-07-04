@@ -145,3 +145,7 @@ Documented ledger sequence backtracking logic in App.jsx.
 Completed development changelog detailing all 50 commits.
 
 
+## docs: add detailed guide for configuring Freighter wallet settings
+Documented the necessary configuration steps for setting up and toggling the Testnet network inside the Freighter wallet extension.
+
+
