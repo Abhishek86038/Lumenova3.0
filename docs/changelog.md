@@ -101,3 +101,7 @@ Added detailed documentation for the transaction submission pipeline in contract
 Documented status polling logic in services/contract.js.
 
 
+## style: improve code formatting in services/contract.js
+Formatted contract service JavaScript code for better readability.
+
+
