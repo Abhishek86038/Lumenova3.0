@@ -89,3 +89,7 @@ Added documentation verification steps for native XLM token address on Testnet.
 Documented state serialization and parsing in services/contract.js.
 
 
+## docs: add comments on fetchUserBadge helper in services/contract.js
+Documented badge client call parameter formatting in services/contract.js.
+
+
