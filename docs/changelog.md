@@ -73,3 +73,7 @@ Added visual section divider comments in crowdfunding/src/lib.rs.
 Refactored test asserts in rewards_badge/src/test.rs for cleaner error reporting.
 
 
+## refactor: expand assertion messages in crowdfunding test suite
+Expanded assert descriptions in crowdfunding/src/test.rs.
+
+
