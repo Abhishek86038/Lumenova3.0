@@ -29,3 +29,7 @@ Cleaned up unused imports and organized crate imports in crowdfunding/src/lib.rs
 Aligned authorization checks with standard Stellar patterns in the Rust contracts.
 
 
+## docs: explain panic error messages in crowdfunding contract
+Added detailed comments on contract panic cases such as goal limits or unauthorized access.
+
+
