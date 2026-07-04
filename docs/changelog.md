@@ -129,3 +129,7 @@ Added style documentation details on layout scroll container class overrides.
 Documented ErrorBoundary state reset parameters.
 
 
+## docs: document WalletModal connect callback parameters
+Documented connecting callbacks in WalletModal component.
+
+
