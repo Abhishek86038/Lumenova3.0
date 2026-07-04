@@ -17,3 +17,7 @@ Documented the raised amount storage key mapping in the Rust contract storage la
 Added documentation for the token storage key that represents the SAC native XLM address.
 
 
+## docs: add explanation for badge contract storage key
+Documented the badge contract ID mapping in the crowdfunding contract storage.
+
+
