@@ -85,3 +85,7 @@ Added details in deploy.sh explaining how to fund the deployer account using Fri
 Added documentation verification steps for native XLM token address on Testnet.
 
 
+## docs: add comments on fetchContractState function error handling
+Documented state serialization and parsing in services/contract.js.
+
+
